@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>DES</title>
+    <link rel="stylesheet" href="app.css" type="text/css"/>
+  </head>
+  <body>
+    <h1>DES algorithm</h1>
+    <h3 id="status"></h3>
+    <label>
+      Key (like "1, 50, 4, 200, ...")
+      <input type="text" id="key"/>
+    </label>
+    <label>
+      <p>Choose a file to <strong>encode</strong></p>
+      <button onclick="showOpenFileDialog('encode')">Choose</button>
+    </label>
+    <p class="info info-encode" id="info-encode-file"></p>
+    <p class="info info-encode" id="info-encode-file-out"></p>
+    <button onclick="encode()" id="button-encode">Encode</button>
+    <label>
+      <p>Choose a file to <strong>decode</strong></p>
+      <button onclick="showOpenFileDialog('decode')">Choose</button>
+    </label>
+    <p class="info info-decode" id="info-decode-file"></p>
+    <p class="info info-decode" id="info-decode-file-out"></p>
+    <button onclick="decode()" id="button-decode">Decode</button>
+    <script async src="app-front.js"></script>
+  </body>
+</html>
